@@ -1,0 +1,34 @@
+.SideMenu {
+    width: 20vw;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    max-width: 8vw;
+    overflow: hidden;
+    transition: max-width 0.5s;
+
+    &:hover {
+        max-width: 20vw;
+
+        > .Wrapper {
+            > .SideMenuButton {
+                > .label {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    > .Wrapper {
+        position: absolute;
+        height: auto;
+        display: block;
+        top: 50vh;
+        transform: translateY(-50%);
+        width: 20vw;
+
+        > .SideMenuButton {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.SideMenuButton {
+    color: rgb(90, 90, 90);
+    width: 100%;
+    border: none;
+    background: transparent;
+    padding: 2.5vw 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    text-align: left;
+
+    &.active {
+        background: #fff;
+        color: #000;
+    }
+
+    > .label {
+        display: inline-block;
+        margin-left: -2vw;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    > .icon {
+        display: inline-block;
+        width: 8vw;
+        text-align: center;
+    }
+}
