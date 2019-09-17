@@ -1,0 +1,30 @@
+.Trail {
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10vw;
+
+  &.active {
+    > .Frame {
+      opacity: 1;
+    }
+  }
+
+  > .Frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 10vw;
+    border: 5px solid blue;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 100;
+    margin: 0 0.2vw;
+  }
+
+  > .Wrapper {
+    white-space: nowrap;
+    transition: transform 0.5s;
+  }
+}
